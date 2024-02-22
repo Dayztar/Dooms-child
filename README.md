@@ -14,9 +14,9 @@ if you like this tool and would like to support.
 <h3>btc: bc1qmg75wtr3clmww59mdkwlv3gszysmljncam5eap </h3>
 
 <h2>Features</h2>
-1. Send report to telegram bot.
-2. Send report to email.
-3. Anti bots.
+1. Send report to telegram bot.<br>
+2. Send report to email.<br>
+3. Anti bots.<br>
 
 <h2>Notification</h2>
 More phishing templates coming soon.
