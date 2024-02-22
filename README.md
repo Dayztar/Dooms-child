@@ -3,6 +3,6 @@ Usage of Doom's child for attacking targets without prior mutual consent is ille
 
 <h2>Installation</h2>
 1. Download python<br>
-2. cd into Doom's child folder and type pip install -r requirements.txt
+2. cd into Doom's child folder and type pip install -r requirements.txt<br>
 3. python3 main.py
 
