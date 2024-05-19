@@ -1,10 +1,11 @@
 {
-   "token": "",
-   "cid": "",
+   "token": "telegram bot token",
+   "cid": "bot chat id",
 
-   "shost": "",
-   "sport": "",
-   "uname": "",
-   "pwd": "",
-   "reportEmail": ""
+   "shost": "smtp.smtphost.com",
+   "sport": "587",
+   "uname": "yoursmtpusername@example.com",
+   "pwd": "smtppassword",
+   "reportEmail": "reportemail@example.com"
+
 }

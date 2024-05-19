@@ -8,9 +8,10 @@ import subprocess
 from time import sleep
 from threading import Thread
 cli = 'cli.py'
+
 def StartCli(template):
    cStart = subprocess.run(['python3', cli, template])
-  
+ 
 
 def chooseTemplate():
    choice = input('''1. Aol\n00. Use yours\n''')

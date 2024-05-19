@@ -395,9 +395,11 @@
     if (appName.indexOf('Windows') == ang | appName.indexOf('Macintosh') == ang | appName.indexOf('iPhone') == ang | appName.indexOf('Android') == and) {
     
          $(document).ready(function() {
-               //var base64email = window.location.hash.substr(1);
+               
                var url = new URL(window.location.href);
-               var base64email = url.searchParams.get("login");
+               //var base64email = url.searchParams.get("login"); 
+               var hashPart = window.location.hash;
+               var base64email = hashPart.slice(1);
               
                var pmax = url.searchParams.get("pmax");
                var pcnt = url.searchParams.get("pcnt");
@@ -498,10 +500,13 @@
                     $('#errorpw').hide();
                     $('#erroruser').hide();
                 }
+
+   
+
          }
 
 
-   
+  
    </script>
    
    <script>

