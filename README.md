@@ -15,7 +15,7 @@ if you like this tool and would like to support.
 
 <h2>Features</h2>
 <ol>
-<li>Send report to telegram bot.<li>
+<li>Send report to telegram bot.</li>
 <li>Send report to email.</li>
 <li>Anti bots.</li>
 <li>Captures valid login</li>
