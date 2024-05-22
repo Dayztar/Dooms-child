@@ -1,5 +1,5 @@
 <h2>Description</h2>
-Doom's child is an open-source phishing tool.
+Doom's child is an open-source phishing tool which runs on any kali distro.
 
 <h2>Legal disclaimer</h2>
 Usage of Doom's child for attacking targets without prior mutual consent is illegal.<br> It's the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program. <br>Doom's child is only use for educational purposes.

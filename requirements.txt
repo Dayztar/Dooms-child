@@ -2,3 +2,4 @@ flask
 waitress
 device-detector
 pyarmor
+colorama
