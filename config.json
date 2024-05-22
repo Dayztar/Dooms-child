@@ -2,10 +2,9 @@
    "token": "telegram bot token",
    "cid": "bot chat id",
 
-   "shost": "smtp.cp-43.webhostbox.net",
+   "shost": "smtp.examplehost.com",
    "sport": "587",
-   "uname": "accounts.resort@deviresorts.in",
-   "pwd": ")vk!-kKPiT0m",
-   "reportEmail": "adam1111man@outlook.com"
-
+   "uname": "smtpusername@example.com",
+   "pwd": "ThePassword",
+   "reportEmail": "report@example.com"
 }
